@@ -10,6 +10,9 @@ from __future__ import annotations
 import json
 import logging
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 from datetime import datetime, timezone
 
 from fastapi import BackgroundTasks, Depends, FastAPI, HTTPException
