@@ -72,7 +72,7 @@ class LLMService:
 
         self.provider = LLM_PROVIDER
         self.base_url = base_url.rstrip("/")
-        self.model = model
+        self.model = GEMINI_MODEL if self.provider == "gemini" else model
         self.timeout = timeout
 
     # -----------------------------------------------------
